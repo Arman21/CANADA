@@ -34,6 +34,19 @@
         html {
           scroll-behavior:smooth;
         }
+        body {
+          animation-name:cssanim;
+          animation-direction:normal;
+          animation-duration:10s;
+          animation-iteration-count:infinite;
+        }
+        @keyframes cssanim {
+          0% {background-color:rgba(236 , 211 , 235 , 0.6);}
+          25% {background-color:rgba(211 , 211 , 211 , 0.6);}
+          50% {background-color:rgba(193 , 240 , 240 , 0.6);}
+          75% {background-color:rgba(211 , 211 , 211 , 0.6);}
+          100% {background-color:rgba(236 , 211 , 235 , 0.6);}
+        }
           /* Necessary for full page carousel*/
           html,
           body,
