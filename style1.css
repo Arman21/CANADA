@@ -211,7 +211,6 @@ main .before1:hover::before {
 }
 #smooth1 {
 	margin-top:25px;
-	margin-bottom:25px;
 	border:1px solid 0;
 }
 .modal-div {
@@ -289,6 +288,96 @@ main .before1:hover::before {
 	color:#FFFFFF;
 	font-size:50px;
 }
+.cubes {
+	border:1px solid 0 ;
+	margin-top:65px;
+	margin-bottom:100px;
+	position:relative;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:stretch;
+	flex-wrap:wrap;
+	z-index:0;
+}
+.cube {
+	border:1px solid 0 ;
+	position:relative;
+	flex:1;
+	height:400px;
+	z-index:0;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.cube1 {
+	margin-left:50px;
+}
+.cube2 {
+	margin-left:75px;
+}
+.cube3 {
+	margin-left:75px;
+	margin-right:50px;
+}
+.photo {
+	border:1px solid 0;
+	height:100%;
+	width:100%;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	z-index:0;
+	margin-left:0;
+	margin-top:0;
+}
+.img_cube {
+	height:100%;
+	width:100%;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	z-index:0;
+}
+.opacity {
+	display:none;
+	border:1px solid 0;
+	height:100%;
+	width:100%;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	z-index:1;
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#0C0F08;
+	opacity:0.6;
+	cursor:pointer;
+	transition:all 1s ease;
+}
+.cube:hover .opacity {
+	display:flex;		
+}
+.cubelink {
+	margin:40% auto;
+	transition:all 1s ease;
+	text-align:center;
+}
+.cubetext {
+	color:#FFFFFF;
+	font-size:40px;
+}
+.opacity:hover .cubelink {
+	margin:10% auto;
+}
+.cubelink:hover  {
+	margin:10% auto;
+}
 @media screen and (max-width:from 1260px to 1365px) {
 	.big {
 		flex-direction:row;
@@ -298,6 +387,23 @@ main .before1:hover::before {
 	.big {
 		flex-direction:column;
 		height:300px;
+	}
+}
+@media screen and (max-width:1000px) {
+	.cubes {
+		flex-direction:column;
+		width:80%;
+		left:10%;
+	}
+	.cube {
+		flex:1;
+		margin-top:70px;
+	}
+	.cube1 {
+		margin-top:0;
+	}
+	.cube3 {
+		margin-right:0;
 	}
 }
 @media screen and (max-width:905px) {
