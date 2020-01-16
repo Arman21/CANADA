@@ -1,2 +1,2 @@
 # CANADA
-Single-page application. MDBootstrap , CSS3 and JavaScript.
+Home page. MDBootstrap , CSS3 and JavaScript.
